@@ -7,12 +7,12 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/126445-support-kilrahcloudflare-ddns-config/</Support>
   <Project>https://github.com/timothymiller/cloudflare-ddns</Project>
   <Overview>Another Cloudflare DDNS client, but this one supports a JSON config file that allows updating multiple zones with a single instance.&#xD;
 Configuring the zones/hosts in template vars is impractical if you have multiple zones or dozens of hosts.&#xD;
 &#xD;
-Important: Before installing/running it you need to preload a sample config:&#xD;
+Important: Before installing/running it you need to preload a sample config, in Unraid's terminal:&#xD;
 &#xD;
 mkdir /mnt/user/appdata/cloudflare-ddns-config&#xD;
 wget -qO /mnt/user/appdata/cloudflare-ddns-config/config.json https://github.com/timothymiller/cloudflare-ddns/raw/master/config-example.json&#xD;
