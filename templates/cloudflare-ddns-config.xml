@@ -1,24 +1,32 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Cloudflare-DDNS-config</Name>
-    <Category>Network:DNS</Category>
-    <Date>2022-07-26</Date>
-    <Repository>timothyjmiller/cloudflare-ddns:latest</Repository>
-    <Registry>https://hub.docker.com/r/timothyjmiller/cloudflare-ddns</Registry>
-    <Network>bridge</Network>
-    <Privileged>false</Privileged>
-    <Support></Support>
-    <Project>https://github.com/timothymiller/cloudflare-ddns</Project>
-    <Overview>
-Another Cloudflare DDNS client, but this one supports a JSON config file that allows updating multiple zones with a single instance.
-Configuring the zones/hosts in template vars is impractical if you have multiple zones or dozens of hosts.[br]
-[b]Important: Before installing/running it you need to preload a sample config:[/b][br]
-[i]mkdir /mnt/user/appdata/cloudflare-ddns-config[br]
-wget -qO /mnt/user/appdata/cloudflare-ddns-config/config.json https://github.com/timothymiller/cloudflare-ddns/raw/master/config-example.json[/i][br]
-And obviously configure it to your needs.
-    </Overview>
-    <WebUI></WebUI>
-    <ExtraParams></ExtraParams>
-    <Icon>https://i.imgur.com/PKa3Sm2.png</Icon>
-    <Config Name="Config" Target="/config.json" Default="/mnt/user/appdata/cloudflare-ddns-config/config.json" Mode="rw" Description="config.json file" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Name>Cloudflare-DDNS-config</Name>
+  <Repository>timothyjmiller/cloudflare-ddns:latest</Repository>
+  <Registry>https://hub.docker.com/r/timothyjmiller/cloudflare-ddns</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/timothymiller/cloudflare-ddns</Project>
+  <Overview>Another Cloudflare DDNS client, but this one supports a JSON config file that allows updating multiple zones with a single instance.&#xD;
+Configuring the zones/hosts in template vars is impractical if you have multiple zones or dozens of hosts.&#xD;
+&#xD;
+Important: Before installing/running it you need to preload a sample config:&#xD;
+&#xD;
+mkdir /mnt/user/appdata/cloudflare-ddns-config&#xD;
+wget -qO /mnt/user/appdata/cloudflare-ddns-config/config.json https://github.com/timothymiller/cloudflare-ddns/raw/master/config-example.json&#xD;
+&#xD;
+And obviously configure it to your needs.</Overview>
+  <Category>Network:DNS</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/DP9TPvy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config" Target="/config.json" Default="/mnt/user/appdata/cloudflare-ddns-config/config.json" Mode="rw" Description="config.json file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cloudflare-ddns-config/config.json</Config>
 </Container>
