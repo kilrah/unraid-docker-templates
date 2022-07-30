@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>FreeFileSync-VNC</Name>
-  <Repository>docker.kilrah.xyz/freefilesync-vnc</Repository>
+  <Repository>kilrah/freefilesync-vnc</Repository>
   <Beta>True</Beta>
   <Category>Backup: Tools:</Category>
   <Date>2022-07-29</Date>
@@ -19,7 +19,7 @@ Notes: If the window does not seem to respond to mouse input it is because FreeF
 Avoid minimizing the FreeFileSync window as similarly to other containers using this setup there is no way to bring it back. If someone knows a solution ping me in the support thread...&#xD;
 Right-clicking in the blank space allows opening other instances.</Overview>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/freefilesync/freefilesync.xml</TemplateUrl>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/freefilesync/freefilesync.xml</TemplateURL>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/FreeFileSync.png</Icon>
   <ExtraParams/>
   <PostArgs/>
