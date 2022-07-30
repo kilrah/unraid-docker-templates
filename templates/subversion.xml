@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/126612-support-kilrahsubversion/</Support>
   <Project>https://subversion.apache.org/</Project>
   <Overview>An SVN server instance.&#xD;
 &#xD;
