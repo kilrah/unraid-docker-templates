@@ -20,8 +20,8 @@ wget -qO /mnt/user/appdata/cloudflare-ddns-config/config.json https://github.com
 And obviously configure it to your needs.</Overview>
   <Category>Network:DNS</Category>
   <WebUI/>
-  <TemplateURL/>
-  <Icon>https://i.imgur.com/3NcPJh3.png</Icon>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/cloudflare-ddns-config.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/cloudflare-ddns-config.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

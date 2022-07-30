@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>FreeFileSync</Name>
-  <Repository>docker.kilrah.xyz/freefilesync</Repository>
+  <Name>FreeFileSync-VNC</Name>
+  <Repository>docker.kilrah.xyz/freefilesync-vnc</Repository>
   <Beta>True</Beta>
   <Category>Backup: Tools:</Category>
   <Date>2022-07-29</Date>
-  <Registry/>
+  <Registry>https://hub.docker.com/repository/docker/kilrah/freefilesync-vnc</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/126600-support-freefilesync-vnc/</Support>
   <Project>https://freefilesync.org/</Project>
   <Overview>FreeFileSync is a free and open-source program used for file synchronization. It is available on Windows, Linux and macOS. The project is backed by donations.&#xD;&#xD;
 This template based on https://github.com/helfrichmichael/prusaslicer-novnc gives a FreeFileSync instance through a VNC connection. 2 paths can be mapped (presented in the container as /home/freefilesync/path1 resp. path2), be sure to only access things through those, writing somewhere else in the container filesystem would fill your Docker image really quickly.&#xD;
@@ -19,13 +19,13 @@ Notes: If the window does not seem to respond to mouse input it is because FreeF
 Avoid minimizing the FreeFileSync window as similarly to other containers using this setup there is no way to bring it back. If someone knows a solution ping me in the support thread...&#xD;
 Right-clicking in the blank space allows opening other instances.</Overview>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>
-  <Icon>https://freefilesync.org/images/FreeFileSync.png</Icon>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/freefilesync/freefilesync.xml</TemplateUrl>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/FreeFileSync.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Donate to FreeFileSync author</DonateText>
+  <DonateLink>https://freefilesync.org/download.php</DonateLink>
   <Requires/>
   <Config Name="VNC interface" Target="8080" Default="8080" Mode="tcp" Description="VNC interface port" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Path 1" Target="/home/freefilesync/path1" Default="" Mode="rw" Description="Path to expose to FreeFileSync" Type="Path" Display="always" Required="true" Mask="false"></Config>
