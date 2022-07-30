@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>subversion</Name>
+  <Repository>elleflorio/svn-server</Repository>
+  <Registry>https://hub.docker.com/r/elleflorio/svn-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://subversion.apache.org/</Project>
+  <Overview>An SVN server instance.&#xD;
+&#xD;
+This container may require some manual intervention in the console and/or appdata repository files regarding authentication, follow the instructions from:&#xD;
+https://medium.com/@elle.florio/the-svn-dockerization-84032e11d88d#.bafh3otmh
+</Overview>
+  <Category>Productivity: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/subversion.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/subversion.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Appdata" Target="/home/svn" Default="/mnt/user/appdata/subversion" Mode="rw" Description="Data directory" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SVN port" Target="3690" Default="3690" Mode="tcp" Description="Port for SVN protocol" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HTTP port" Target="80" Default="80" Mode="tcp" Description="Port for HTTP/WebDAV protocol" Type="Port" Display="always" Required="false" Mask="false"></Config>
+</Container>
