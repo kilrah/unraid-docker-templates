@@ -24,6 +24,13 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <Changes>
+###v1.0.1 (2022-07-30)
+- Remove unnecessary options from connection page
+
+###v1.0.0 (2022-07-29)
+- Initial release
+  </Changes>
   <DonateText>Donate to FreeFileSync author</DonateText>
   <DonateLink>https://freefilesync.org/download.php</DonateLink>
   <Requires/>
