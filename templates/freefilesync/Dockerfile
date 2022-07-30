@@ -30,11 +30,10 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists && \
     apt autoclean -y && \
     apt autoremove -y \
-    && groupadd freefilesync \
-    && useradd -g freefilesync --create-home --home-dir /home/freefilesync freefilesync \
+    && useradd -u 99 -g 100 --create-home --home-dir /home/freefilesync freefilesync \
     && mkdir -p /home/freefilesync/path1 \
     && mkdir -p /home/freefilesync/path2 \
-    && chown -R freefilesync:freefilesync /home/freefilesync \
+    && chown -R 99:100 /home/freefilesync \
     && ln -s /home/freefilesync/.config/FreeFileSync /home/freefilesync/appdata
 
 COPY --from=easy-novnc-build /bin/easy-novnc /usr/local/bin/
@@ -48,7 +47,7 @@ VOLUME /home/freefilesync/path1/
 VOLUME /home/freefilesync/path2/
 VOLUME /home/freefilesync/.config/FreeFileSync/
 
-CMD ["bash", "-c", "chown -R freefilesync:freefilesync /dev/stdout && exec gosu freefilesync supervisord"]
+CMD ["bash", "-c", "chown -R 99:100 /dev/stdout && exec gosu freefilesync supervisord"]
 
     
     
