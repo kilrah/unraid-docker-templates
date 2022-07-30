@@ -5,7 +5,7 @@
   <Beta>True</Beta>
   <Category>Backup: Tools:</Category>
   <Date>2022-07-29</Date>
-  <Registry>https://hub.docker.com/repository/docker/kilrah/freefilesync-vnc</Registry>
+  <Registry>https://hub.docker.com/r/kilrah/freefilesync-vnc</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
