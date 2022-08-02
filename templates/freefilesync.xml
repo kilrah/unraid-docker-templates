@@ -25,6 +25,9 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <PostArgs/>
   <CPUset/>
   <Changes>
+###v1.0.3 (2022-07-31)
+- Add firefox browser to handle Google Drive authentication. Available in menu as well
+
 ###v1.0.2 (2022-07-31)
 - Add missing Asian fonts
 
