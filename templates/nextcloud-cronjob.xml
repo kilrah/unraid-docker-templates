@@ -8,7 +8,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/127078-support-kilrahnextcloud-ffmpeg/</Support>
   <Project>https://github.com/rcdailey/nextcloud-cronjob</Project>
   <Overview>Nextcloud cron job runner.&#xD;
 The official Nextcloud Docker container needs something external to run its cron jobs reliably, this is a simple solution to this problem to avoid having to delve into user scripts.&#xD;

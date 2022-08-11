@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nextcloud-ffmpeg</Name>
+  <Repository>kilrah/nextcloud-ffmpeg</Repository>
+  <Category>Cloud:</Category>
+  <Date>2022-08-10</Date>
+  <Registry>https://hub.docker.com/repository/docker/kilrah/nextcloud-ffmpeg</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/127078-support-kilrahnextcloud-ffmpeg/</Support>
+  <Project>https://nextcloud.com/</Project>
+  <Overview>Official Nextcloud image, but with ffmpeg added to the container to allow for building video thumbnails and using video conversion apps.&#xD;&#xD;
+The image is built from the official nextcloud:latest tag. ffmpeg takes an extra 450MB in the container image, should you not need it you can safely replace the "Repository" entry with "nextcloud:latest", both images are directly compatible regarding all of appdata/storage/database/mounts/ports.&#xD;&#xD;
+To enable previews for movies you will need to edit your appdata/config/config.php file and enable the appropriate providers, refer to Nextcloud's configuration doc below or the config.sample.php in the same folder which is well documented:&#xD;
+https://docs.nextcloud.com/server/22/admin_manual/configuration_server/config_sample_php_parameters.html#previews.&#xD;&#xD;
+If you have large images you might need to increase preview_max_memory, in which case you would also want to increase the global PHP memory limit. To do so you can add "-e PHP_MEMORY_LIMIT=XX" in this template's Extra Parameters.</Overview>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/nextcloud-ffmpeg.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/nextcloud-ffmpeg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Changes>
+### 2022-08-11
+- Initial release
+  </Changes>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <Requires/>
+  <Config Name="HTTP port" Target="80" Default="80" Mode="tcp" Description="HTTP port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="App Data" Target="/var/www/html" Default="/mnt/user/appdata/nextcloud-ffmpeg" Mode="rw" Description="Application data" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Storage" Target="/var/www/html/data" Default="" Mode="rw" Description="User data storage location, typically a share if you have lots of data. Can be removed, in which case everything is stored in the App Data folder." Type="Path" Display="always" Required="false" Mask="false"></Config>
+</Container>
