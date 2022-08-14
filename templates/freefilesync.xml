@@ -2,7 +2,6 @@
 <Container version="2">
   <Name>FreeFileSync-VNC</Name>
   <Repository>kilrah/freefilesync-vnc</Repository>
-  <Beta>True</Beta>
   <Category>Backup: Tools:</Category>
   <Date>2022-07-29</Date>
   <Registry>https://hub.docker.com/r/kilrah/freefilesync-vnc</Registry>
