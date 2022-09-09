@@ -22,8 +22,12 @@ If you have large images you might need to increase preview_max_memory, in which
   <PostArgs/>
   <CPUset/>
   <Changes>
+### 2022-09-09
+- Updated from upstream with Nextcloud 24.0.5
+
 ### 2022-08-13
 - Updated from upstream with Nextcloud 24.0.4
+
 ### 2022-08-11
 - Initial release
   </Changes>
