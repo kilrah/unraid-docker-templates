@@ -24,6 +24,9 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <PostArgs/>
   <CPUset/>
   <Changes>
+###v1.0.5 (2022-09-03)
+- Update freefilesync to version 11.26
+
 ###v1.0.4 (2022-09-03)
 - Update freefilesync to version 11.25
 
