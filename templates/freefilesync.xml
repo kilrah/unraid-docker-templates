@@ -15,7 +15,7 @@
 This template based on https://github.com/helfrichmichael/prusaslicer-novnc gives a FreeFileSync instance through a VNC connection. 2 paths can be mapped (presented in the container as /home/freefilesync/path1 resp. path2), be sure to only access things through those, writing somewhere else in the container filesystem would fill your Docker image really quickly.&#xD;
 The appdata folder is mapped at /home/freefilesync/appdata and will contain logs, config and can be used to store profiles.&#xD;&#xD;
 Notes: If the window does not seem to respond to mouse input it is because FreeFileSync's donation popup was spawned behind the main window. Drag the window a bit to reveal it.&#xD;&#xD;
-Avoid minimizing the FreeFileSync window as similarly to other containers using this setup there is no way to bring it back. If someone knows a solution ping me in the support thread...&#xD;
+If you minimized the FreeFileSync window a middle-click will bring up a window switcher.&#xD;
 Right-clicking in the blank space allows opening other instances.</Overview>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/freefilesync.xml</TemplateURL>
@@ -24,6 +24,9 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <PostArgs/>
   <CPUset/>
   <Changes>
+ ###v1.0.6 (2022-09-03)
+- Update freefilesync to version 11.27
+
 ###v1.0.5 (2022-09-03)
 - Update freefilesync to version 11.26
 
