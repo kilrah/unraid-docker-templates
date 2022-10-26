@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/130158-support-kilrahsearxng/</Support>
   <Project>https://github.com/searxng/searxng</Project>
   <Overview>Privacy-respecting, hackable metasearch engine.&#xD;
 &#xD;
