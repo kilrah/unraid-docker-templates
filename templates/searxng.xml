@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SearXNG</Name>
+  <Repository>searxng/searxng</Repository>
+  <Registry>https://hub.docker.com/r/searxng/searxng</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/searxng/searxng</Project>
+  <Overview>Privacy-respecting, hackable metasearch engine.&#xD;
+&#xD;
+SearXNG is a fork of searx.&#xD;
+&#xD;
+You can read more about the differences between searxng and searx here: https://github.com/searxng/searxng/issues/46&#xD;
+And check out SearxNG's expansive changelog here: https://github.com/searxng/searxng/wiki/Changes-from-version-1.0.0</Overview>
+  <Category>Productivity: Other:</Category>
+  <Date>2022-10-26</Date>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/searxng.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/searxng.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/etc/searxng" Default="/mnt/user/appdata/searxng/" Mode="rw" Description="SearXNG's config location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="SearXNG Instance Name" Target="INSTANCE_NAME" Default="" Mode="" Description="Your SearXNG instance name" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
