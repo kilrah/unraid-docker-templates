@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dolibarr</Name>
+  <Repository>tuxgasy/dolibarr</Repository>
+  <Registry>https://hub.docker.com/r/tuxgasy/dolibarr/</Registry>
+  <Network>bridge</Network>
+  <Beta>True</Beta>
+  <Category>Productivity:</Category>
+  <Date>2022-11-04</Date>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/130542-support-kilrahdolibarr/</Support>
+  <Project>https://www.dolibarr.org/</Project>
+  <Overview>Open Source ERP and CRM for business.&#xD;&#xD;
+Default login is admin/admin. Database creation takes a few minutes on first launch.
+</Overview>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/dolibarr.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/dolibarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/var/www/documents/" Default="/mnt/user/appdata/dolibarr/" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Host" Target="DOLI_DB_HOST" Default="" Mode="" Description="MySQL Database Host" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Port" Target="DOLI_DB_HOST_PORT" Default="3306" Mode="" Description="MySQL Database Port" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB User" Target="DOLI_DB_USER" Default="" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Password" Target="DOLI_DB_PASSWORD" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="DB Name" Target="DOLI_DB_NAME" Default="" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Root URL" Target="DOLI_URL_ROOT" Default="" Mode="" Description="URL you will be accessing the site with" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Timezone" Target="PHP_INI_DATE_TIMEZONE" Default="Europe/Paris" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="User" Target="WWW_USER_ID" Default="99" Mode="" Description="User ID" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Group" Target="WWW_GROUP_ID" Default="100" Mode="" Description="Group ID" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
