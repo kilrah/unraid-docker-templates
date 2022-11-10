@@ -9,7 +9,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/130827-support-kilrahiperf3/</Support>
   <Project>https://iperf.fr/</Project>
   <Overview>Network performance testing tool.&#xD;&#xD;
 Spawns an iperf3 instance with the settings you put in the "Post Arguments" field (switch to Advanced View to see it). By default that will be a server on port 5201, which can be remapped below.&#xD;
