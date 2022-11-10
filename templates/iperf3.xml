@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>iperf3</Name>
+  <Repository>networkstatic/iperf3</Repository>
+  <Registry>https://hub.docker.com/r/networkstatic/iperf3</Registry>
+  <Network>host</Network>
+  <Category>Network:Management</Category>
+  <Date>2022-11-10</Date>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://iperf.fr/</Project>
+  <Overview>Network performance testing tool.&#xD;&#xD;
+Spawns an iperf3 instance with the settings you put in the "Post Arguments" field (switch to Advanced View to see it). By default that will be a server on port 5201, which can be remapped below.&#xD;
+Clearing Post Arguments will show the help text in the log and stop.
+</Overview>
+  <WebUI/>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/iperf3.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/iperf3.png</Icon>
+  <ExtraParams/>
+  <PostArgs>-s</PostArgs>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="5201" Default="5201" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
+</Container>
