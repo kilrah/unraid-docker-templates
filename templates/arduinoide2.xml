@@ -16,6 +16,7 @@
   Only boards that appear as serial ports and do not do fancy stuff like disconnecting to reconnect as HID for their bootloader will work for programming, but those that work will do so even when bound via USBIP.&#xD;
   A web browser, file browser with archive support, terminal and git are provided to get your codez in/out.&#xD;
   Use the right mouse button in the empty "desktop" (unmaximize window) to bring up the app menu, and the middle mouse button for a task switcher.&#xD;&#xD;
+  Use /mnt/cache/appdata paths instead of /mnt/user/appdata if you have an SSD cache, performance is tremendously improved.&#xD;
   Very beta and probably does lots of things you shouldn't do in Docker, but works. Probably don't expose to the internet...</Overview>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/arduinoide2.xml</TemplateURL>
