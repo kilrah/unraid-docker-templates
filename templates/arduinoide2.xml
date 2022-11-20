@@ -5,12 +5,12 @@
   <Beta>True</Beta>
   <Category>Productivity:</Category>
   <Date>2022-11-20</Date>
-  <Registry></Registry>
+  <Registry>https://hub.docker.com/repository/docker/kilrah/arduinoide2-vnc</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/131202-support-kilraharduinoide2-vnc/</Support>
   <Project>https://www.arduino.cc/</Project>
   <Overview>Arduino IDE 2 as a container. Allows sharing a dev environment wherever you are instead of battling with libraries / dealing with slow compilation on Windows.&#xD;
   Only boards that appear as serial ports and do not do fancy stuff like disconnecting to reconnect as HID for their bootloader will work for programming, but those that work will do so even when bound via USBIP.&#xD;
