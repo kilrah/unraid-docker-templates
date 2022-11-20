@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>arduinoide2-vnc</Name>
+  <Repository>kilrah/arduinoide2-vnc</Repository>
+  <Beta>True</Beta>
+  <Category>Productivity:</Category>
+  <Date>2022-11-20</Date>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://www.arduino.cc/</Project>
+  <Overview>Arduino IDE 2 as a container. Allows sharing a dev environment wherever you are instead of battling with libraries / dealing with slow compilation on Windows.&#xD;
+  Only boards that appear as serial ports and do not do fancy stuff like disconnecting to reconnect as HID for their bootloader will work for programming, but those that work will do so even when bound via USBIP.&#xD;
+  A web browser, file browser with archive support, terminal and git are provided to get your codez in/out.&#xD;&#xD;
+  Very beta and probably does lots of things you shouldn't do in Docker, but works. Probably don't expose to the internet...</Overview>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/arduinoide2.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/arduinoide2.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Changes>
+  ###v1.0.0 (2022-11-20)
+- Initial release
+  </Changes>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <Requires/>
+  <Config Name="VNC interface" Target="8080" Default="8080" Mode="tcp" Description="VNC interface port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Appdata" Target="/home/arduino/" Default="/mnt/user/appdata/arduinoide2" Mode="rw" Description="Application data" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Device" Target="" Default="" Mode="" Description="Serial device to expose to the container, typically either /dev/ttyUSB0 or /dev/ttyACM0. Use ls -l /dev/tty* in Unraid terminal to find it. Remove this if you have none to bind otherwise the container won't start." Type="Device" Display="always" Required="false" Mask="false"></Config>
+</Container>
