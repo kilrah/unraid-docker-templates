@@ -13,7 +13,7 @@
   <Project>https://github.com/LibreTranslate/LibreTranslate</Project>
   <Overview>Free and Open Source Machine Translation API, entirely self-hosted.&#xD;&#xD;
 First start takes a while as models are being downloaded.&#xD;&#xD;
-Warning: This container is very big, expect 10+GB of Docker image usage.
+Warning: This container is very big, expect about 12GB of Docker image usage.
 </Overview>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/libretranslate.xml</TemplateURL>
