@@ -25,7 +25,11 @@
   <PostArgs/>
   <CPUset/>
   <Changes>
-  ###v1.0.0 (2022-11-20)
+###v1.0.1 (2022-11-23)
+- Add PUID/PGID support
+  Container will take ownership of the appdata directory and its contents with the supplied IDs
+
+###v1.0.0 (2022-11-20)
 - Initial release
   </Changes>
   <DonateText></DonateText>
@@ -34,4 +38,6 @@
   <Config Name="VNC interface" Target="8080" Default="8080" Mode="tcp" Description="VNC interface port" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Appdata" Target="/home/arduino/" Default="/mnt/user/appdata/arduinoide2" Mode="rw" Description="Application data" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Device" Target="" Default="" Mode="" Description="Serial device to expose to the container, typically either /dev/ttyUSB0 or /dev/ttyACM0. Use ls -l /dev/tty* in Unraid terminal to find it. Remove this if you have none to bind otherwise the container won't start." Type="Device" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Description="User ID to use for appdata" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Description="Group ID to use for appdata" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
