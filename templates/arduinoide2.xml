@@ -25,6 +25,9 @@
   <PostArgs/>
   <CPUset/>
   <Changes>
+###v1.0.2 (2022-12-05)
+- Bump Arduino IDE to 2.0.3
+
 ###v1.0.1 (2022-11-23)
 - Add PUID/PGID support
   Container will take ownership of the appdata directory and its contents with the supplied IDs
