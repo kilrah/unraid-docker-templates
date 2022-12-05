@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>thingsboard-postgres</Name>
+  <Repository>thingsboard/tb-postgres</Repository>
+  <Registry>https://hub.docker.com/r/thingsboard/tb-postgres/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Category>HomeAutomation: Network:Other</Category>
+  <Date>2022-12-05</Date>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/131965-support-kilrahthingsboard-postgres/</Support>
+  <Project>https://thingsboard.io</Project>
+  <Overview>ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management.&#xD;&#xD;
+Default Creds:&#xD;
+System Administrator: sysadmin@thingsboard.org / sysadmin&#xD;
+Tenant Administrator: tenant@thingsboard.org / tenant&#xD;
+Customer User: customer@thingsboard.org / customer&#xD;&#xD;
+Initial setup:&#xD;
+Run the container once so it creates the directories, it won't start due to permission issues, stop it&#xD;
+Run "chown -R 799:799 /mnt/user/appdata/thingsboard-postgres" (adapt as appropriate if you changed defaults) in unraid terminal&#xD;
+Start container again, it should now be good after a couple of minutes needed for initial setup.
+</Overview>
+  <WebUI>http://[IP]:[PORT:9090]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/thingsboard-postgres.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/thingsboard-postgres.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web Port" Target="9090" Default="9090" Mode="tcp" Description="Web UI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="MQTT Port" Target="1883" Default="1883" Mode="tcp" Description="MQTT Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="RPC Port" Target="7070" Default="7070" Mode="tcp" Description="Edge RPC Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="COAP Ports" Target="5683-5688" Default="5683-5688" Mode="udp" Description="COAP and LwM2M ports" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/thingsboard-postgres/data" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Logs" Target="/var/log/thingsboard" Default="/mnt/user/appdata/thingsboard-postgres/logs" Mode="rw" Description="Logs location" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
