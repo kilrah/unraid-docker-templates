@@ -9,7 +9,7 @@
   <Date>2022-12-29</Date>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/132939-support-kilrahpictshare/</Support>
   <Project>https://github.com/HaschekSolutions/pictshare</Project>
   <Overview>Host your own images / gifs / mp4s / text / bins and stay in control. Self-hosted imgur/pastebin-like.&#xD;&#xD;
 See https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/DOCKER.md for extra variables that can be added if required.
