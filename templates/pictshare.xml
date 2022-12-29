@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pictshare</Name>
+  <Repository>hascheksolutions/pictshare</Repository>
+  <Registry>https://hub.docker.com/r/hascheksolutions/pictshare/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Category>Network:Web</Category>
+  <Date>2022-12-29</Date>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/HaschekSolutions/pictshare</Project>
+  <Overview>Host your own images / gifs / mp4s / text / bins and stay in control. Self-hosted imgur/pastebin-like.&#xD;&#xD;
+See https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/DOCKER.md for extra variables that can be added if required.
+</Overview>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/pictshare.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/pictshare.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web Port" Target="80" Default="80" Mode="tcp" Description="Web UI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/var/www/data" Default="/mnt/user/appdata/pictshare" Mode="rw" Description="Storage for uploaded files" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="MAX_UPLOAD_SIZE" Target="MAX_UPLOAD_SIZE" Default="50" Description="Size in MB that will be used for nginx" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
