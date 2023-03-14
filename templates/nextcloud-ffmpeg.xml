@@ -14,7 +14,9 @@
 The image is built from the official nextcloud:latest tag. ffmpeg takes an extra 450MB in the container image, should you not need it you can safely replace the "Repository" entry with "nextcloud:latest", both images are directly compatible regarding all of appdata/storage/database/mounts/ports.&#xD;&#xD;
 To enable previews for movies you will need to edit your appdata/config/config.php file and enable the appropriate providers, refer to Nextcloud's configuration doc below or the config.sample.php in the same folder which is well documented:&#xD;
 https://docs.nextcloud.com/server/22/admin_manual/configuration_server/config_sample_php_parameters.html#previews.&#xD;&#xD;
-If you have large images you might need to increase preview_max_memory, in which case you would also want to increase the global PHP memory limit. To do so you can add "-e PHP_MEMORY_LIMIT=XX" in this template's Extra Parameters.</Overview>
+If you have large images you might need to increase preview_max_memory, in which case you would also want to increase the global PHP memory limit. To do so you can add "-e PHP_MEMORY_LIMIT=XX" in this template's Extra Parameters.&#xD;&#xD;
+The image supports Intel Quicksync for hardware transcoding in the Memories app, to enable add a new Device to the template, with "/dev/dri".
+</Overview>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/nextcloud-ffmpeg.xml</TemplateURL>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/nextcloud-ffmpeg.png</Icon>
@@ -22,11 +24,8 @@ If you have large images you might need to increase preview_max_memory, in which
   <PostArgs/>
   <CPUset/>
   <Changes>
-### 2022-09-09
-- Updated from upstream with Nextcloud 24.0.5
-
-### 2022-08-13
-- Updated from upstream with Nextcloud 24.0.4
+### 2023-03-14
+- Add Quicksync support
 
 ### 2022-08-11
 - Initial release
