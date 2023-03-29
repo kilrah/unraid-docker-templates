@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>serge</Name>
+  <Repository>ghcr.io/nsarrazin/serge</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/nsarrazin/serge</Project>
+  <Overview>Serge - LLaMa made easy&#xD;
+&#xD;
+A chat interface based on llama.cpp for running Alpaca models. Entirely self-hosted, no API keys needed. Fits on 4GB of RAM (depending on model) and runs on the CPU.&#xD;
+&#xD;
+Models can be downloaded from within the interface.&#xD;
+Currently only the 7B, 713B and 30B alpaca models are supported. If you have existing weights from another project you can add them to the weights appdata directory.&#xD;
+&#xD;
+A note on memory usage&#xD;
+llama will just crash if you don't have enough available memory for your model.&#xD;
+&#xD;
+7B requires about 4.5GB of free RAM&#xD;
+13B requires about 12GB free&#xD;
+30B requires about 20GB free</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8008]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/serge.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/serge.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI" Target="8008" Default="8008" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DB path" Target="/data/db/" Default="/mnt/user/appdata/serge/db" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Weights path" Target="/usr/src/app/weights" Default="/mnt/user/appdata/serge/weights" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
