@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/137127-support-kilrahserge/</Support>
   <Project>https://github.com/nsarrazin/serge</Project>
   <Overview>Serge - LLaMa made easy&#xD;
 &#xD;
