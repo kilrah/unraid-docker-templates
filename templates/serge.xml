@@ -9,19 +9,15 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/137127-support-kilrahserge/</Support>
   <Project>https://github.com/serge-chat/serge</Project>
-  <Overview>Serge - LLaMa made easy&#xD;
-&#xD;
-A chat interface based on llama.cpp for running Alpaca models. Entirely self-hosted, no API keys needed. Fits on 4GB of RAM (depending on model) and runs on the CPU.&#xD;
-&#xD;
-Models can be downloaded from within the interface.&#xD;
-Currently only the 7B, 713B and 30B alpaca models are supported. If you have existing weights from another project you can add them to the weights appdata directory.&#xD;
-&#xD;
-A note on memory usage&#xD;
+  <Overview>Serge - LLaMa made easy&#xD;&#xD;
+A chat interface based on llama.cpp for running Alpaca models. Entirely self-hosted, no API keys needed. Fits on 4GB of RAM (depending on model) and runs on the CPU.&#xD;&#xD;
+Models can be downloaded from within the interface.&#xD;&#xD;
+A note on memory usage:&#xD;
 llama will just crash if you don't have enough available memory for your model.&#xD;
-&#xD;
 7B requires about 4.5GB of free RAM&#xD;
 13B requires about 12GB free&#xD;
-30B requires about 20GB free</Overview>
+30B requires about 20GB free&#xD;&#xD;
+New models are regularly being added, check the project page for notes and requirements</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:8008]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/serge.xml</TemplateURL>
