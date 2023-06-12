@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>serge</Name>
-  <Repository>ghcr.io/nsarrazin/serge</Repository>
+  <Repository>ghcr.io/serge-chat/serge</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/137127-support-kilrahserge/</Support>
-  <Project>https://github.com/nsarrazin/serge</Project>
+  <Project>https://github.com/serge-chat/serge</Project>
   <Overview>Serge - LLaMa made easy&#xD;
 &#xD;
 A chat interface based on llama.cpp for running Alpaca models. Entirely self-hosted, no API keys needed. Fits on 4GB of RAM (depending on model) and runs on the CPU.&#xD;
