@@ -11,10 +11,7 @@
   <Project>https://github.com/searxng/searxng</Project>
   <Overview>Privacy-respecting, hackable metasearch engine.&#xD;
 &#xD;
-SearXNG is a fork of searx.&#xD;
-&#xD;
-You can read more about the differences between searxng and searx here: https://github.com/searxng/searxng/issues/46&#xD;
-And check out SearxNG's expansive changelog here: https://github.com/searxng/searxng/wiki/Changes-from-version-1.0.0</Overview>
+SearXNG is a fork of searx.</Overview>
   <Category>Productivity: Other:</Category>
   <Date>2022-10-26</Date>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
