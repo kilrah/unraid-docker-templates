@@ -17,7 +17,9 @@ Important: Before installing/running it you need to preload a sample config, in 
 mkdir /mnt/user/appdata/cloudflare-ddns-config&#xD;
 wget -qO /mnt/user/appdata/cloudflare-ddns-config/config.json https://github.com/timothymiller/cloudflare-ddns/raw/master/config-example.json&#xD;
 &#xD;
-And obviously configure it to your needs.</Overview>
+And obviously configure it to your needs.&#xD;
+&#xD;
+If you started the container without doing that first Docker will create a folder, you have to stop the container, delete the folder and get the file before restarting.</Overview>
   <Category>Network:DNS</Category>
   <WebUI/>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/cloudflare-ddns-config.xml</TemplateURL>
