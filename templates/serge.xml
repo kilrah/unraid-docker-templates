@@ -18,7 +18,7 @@ llama will just crash if you don't have enough available memory for your model.&
 13B requires about 12GB free&#xD;
 30B requires about 20GB free&#xD;&#xD;
 New models are regularly being added, check the project page for notes and requirements</Overview>
-  <Category>Other:</Category>
+  <Category>AI:</Category>
   <WebUI>http://[IP]:[PORT:8008]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/serge.xml</TemplateURL>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/serge.png</Icon>
