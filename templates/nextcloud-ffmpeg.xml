@@ -10,12 +10,13 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/127078-support-kilrahnextcloud-ffmpeg/</Support>
   <Project>https://nextcloud.com/</Project>
-  <Overview>Official Nextcloud image, but with ffmpeg added to the container to allow for building video thumbnails and using video conversion apps.&#xD;&#xD;
-The image is built from the official nextcloud:latest tag. ffmpeg takes an extra 450MB in the container image, should you not need it you can safely replace the "Repository" entry with "nextcloud:latest", both images are directly compatible regarding all of appdata/storage/database/mounts/ports.&#xD;&#xD;
+  <Overview>Official Nextcloud image but with ffmpeg, PDLib and Quicksync support added to the container to allow for building video thumbnails and using video conversion/facial recognition apps.&#xD;&#xD;
+The additions take an extra 700MB in the container image, should you not need them you can safely replace the "Repository" entry with the base "nextcloud", both images are directly compatible regarding all of appdata/storage/database/mounts/ports.&#xD;&#xD;
 To enable previews for movies you will need to edit your appdata/config/config.php file and enable the appropriate providers, refer to Nextcloud's configuration doc below or the config.sample.php in the same folder which is well documented:&#xD;
 https://docs.nextcloud.com/server/22/admin_manual/configuration_server/config_sample_php_parameters.html#previews.&#xD;&#xD;
-If you have large images you might need to increase preview_max_memory, in which case you would also want to increase the global PHP memory limit. To do so you can add "-e PHP_MEMORY_LIMIT=XX" in this template's Extra Parameters.&#xD;&#xD;
-The image supports Intel Quicksync for hardware transcoding in the Memories app, to enable add a new Device to the template, with "/dev/dri".
+If you have large images you might need to increase preview_max_memory in nextcloud's config file, in which case you would also want to increase the global PHP memory limit. To do so you can add e.g. "-e PHP_MEMORY_LIMIT=2G" in this template's Extra Parameters.&#xD;&#xD;
+The image supports Intel Quicksync for hardware video transcoding in the Memories app, to enable add a new Device to the template, with "/dev/dri".&#xD;&#xD;
+The Face Recognition app also requires a higher PHP memory limit, see above.
 </Overview>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/nextcloud-ffmpeg.xml</TemplateURL>
@@ -24,6 +25,9 @@ The image supports Intel Quicksync for hardware transcoding in the Memories app,
   <PostArgs/>
   <CPUset/>
   <Changes>
+### 2024-06-21
+- Add PDLib for Face Recognition app support
+
 ### 2023-03-14
 - Add Quicksync support
 
