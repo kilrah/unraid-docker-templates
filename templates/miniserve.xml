@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>miniserve</Name>
+  <Repository>svenstaro/miniserve:alpine</Repository>
+  <Registry>https://hub.docker.com/r/svenstaro/miniserve</Registry>
+  <Network>bridge</Network>
+  <Date>2024-07-21</Date>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/170611-support-kilrahminiserve/</Support>
+  <Project>https://github.com/svenstaro/miniserve</Project>
+  <Overview>For when you really just want to serve some files over HTTP right now!&#xD;
+&#xD;
+miniserve is a small, self-contained cross-platform CLI tool that allows you to just grab the binary and serve some file(s) via HTTP. Sometimes this is just a more practical and quick way than doing things properly.&#xD;
+&#xD;
+Shares the "/share" container directory by default. You can mount multiple unraid directories into subfolders if desired.&#xD;
+&#xD;
+See project page for documentation on environment variables that can be added/customized.</Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/miniserve.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Shared Folder" Target="/share" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MINISERVE_TITLE" Target="MINISERVE_TITLE" Default="" Mode="" Description="Page title" Type="Variable" Display="always" Required="false" Mask="false">My Share Page</Config>
+  <Config Name="MINISERVE_PATH" Target="MINISERVE_PATH" Default="" Mode="" Description="Container directory to share" Type="Variable" Display="advanced" Required="true" Mask="false">/share</Config>
+</Container>
