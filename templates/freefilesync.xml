@@ -24,8 +24,8 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <PostArgs/>
   <CPUset/>
   <Changes>
-###v1.0.23 (2024-11-13)
-- Update freefilesync to version 13.8
+###v1.0.24 (2024-12-09)
+- Update freefilesync to version 13.9
 
 ###v1.0.3 (2022-07-31)
 - Add firefox browser to handle Google Drive authentication. Available in menu as well
