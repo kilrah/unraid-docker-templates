@@ -26,7 +26,8 @@ Default login is admin/admin. Database creation takes a few minutes on first lau
   <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Data" Target="/var/www/documents/" Default="/mnt/user/appdata/dolibarr/" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/var/www/documents/" Default="/mnt/user/appdata/dolibarr/documents" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Modules" Target="/var/www/html/custom" Default="/mnt/user/appdata/dolibarr/modules" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="DB Host" Target="DOLI_DB_HOST" Default="" Mode="" Description="MySQL Database Host" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DB Port" Target="DOLI_DB_HOST_PORT" Default="3306" Mode="" Description="MySQL Database Port" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DB User" Target="DOLI_DB_USER" Default="" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false"/>
