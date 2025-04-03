@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>owntone</Name>
+  <Beta>False</Beta>
+  <Category>MediaApp:Music</Category>
+  <Date>2025-04-03</Date>
+  <Repository>owntone/owntone</Repository>
+  <Registry>https://hub.docker.com/r/owntone/owntone</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/188813-support-kilrahowntone/</Support>
+  <Project>https://github.com/owntone/owntone-server</Project>
+  <Overview>OwnTone is a media server that lets you play audio sources such as local files, Spotify, pipe input or internet radio to AirPlay 1 and 2 receivers, Chromecast receivers, Roku Soundbridge, a browser or the server&#x2019;s own sound system. Or you can listen to your music via any client that supports mp3 streaming.&#xD;
+&#xD;
+You control the server via a web interface, Apple Remote, an Android remote (e.g. Retune), an MPD client, json API or DACP.&#xD;
+&#xD;
+OwnTone also serves local files via the Digital Audio Access Protocol (DAAP) to iTunes (Windows), Apple Music (macOS) and Rhythmbox (Linux), and via the Roku Server Protocol (RSP) to Roku devices.&#xD;
+&#xD;
+OwnTone was previously called forked-daapd, which again was a rewrite of mt-daapd (Firefly Media Server).&#xD;
+&#xD;
+Host/br0 networking is required for use with hardware playback devices.</Overview>
+  <WebUI>http://[IP]:[PORT:3689]</WebUI>
+  <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/owntone.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/owntone.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config" Target="/etc/owntone" Default="/mnt/user/appdata/owntone/config" Mode="rw" Description="App config file location" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Appdata" Target="/var/cache/owntone" Default="/mnt/user/appdata/owntone/data" Mode="rw" Description="Application data" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Media" Target="/srv/media" Default="" Mode="rw" Description="Location of your media files" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <TailscaleStateDir/>
+</Container>
