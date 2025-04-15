@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>dolibarr</Name>
-  <Repository>tuxgasy/dolibarr</Repository>
-  <Registry>https://hub.docker.com/r/tuxgasy/dolibarr/</Registry>
+  <Repository>dolibarr/dolibarr</Repository>
+  <Registry>https://hub.docker.com/r/dolibarr/dolibarr/</Registry>
   <Network>bridge</Network>
-  <Beta>True</Beta>
+  <Beta>False</Beta>
   <Category>Productivity:</Category>
   <Date>2022-11-04</Date>
   <MyIP/>
@@ -24,6 +24,10 @@ Default login is admin/admin. Database creation takes a few minutes on first lau
   <DateInstalled/>
   <DonateText/>
   <DonateLink/>
+  <Changes>
+### 2025-04-15
+- Change repository to the now official container
+  </Changes>
   <Requires/>
   <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Data" Target="/var/www/documents/" Default="/mnt/user/appdata/dolibarr/documents" Mode="rw" Description="Data location" Type="Path" Display="always" Required="true" Mask="false"/>
