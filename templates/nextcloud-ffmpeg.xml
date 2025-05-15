@@ -25,6 +25,9 @@ The Face Recognition app also requires a higher PHP memory limit, see above.
   <PostArgs/>
   <CPUset/>
   <Changes>
+### 2025-05-15
+- Add fix for iOS18 HEIC files
+
 ### 2024-07-02
 - Add AMD VA drivers
 
