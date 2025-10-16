@@ -8,9 +8,10 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/194289-support-kilrahlibrespeed/</Support>
   <Project>https://github.com/librespeed/speedtest</Project>
-  <Overview>Simple and lightweight local speedtest page.</Overview>
+  <Overview>Simple and lightweight local speedtest page.&#xD;&#xD;
+Avoid reverse-proxying since that will affect the measurement.</Overview>
   <Category>Network:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/librespeed.xml</TemplateURL>
