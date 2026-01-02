@@ -15,7 +15,8 @@ Hypermind is a completely decentralized, Peer-to-Peer deployment counter.&#13;
 &#13;
 It solves the critical infrastructure challenge of knowing exactly how many other people are currently wasting 50MB of RAM running this specific container.&#13;
 &#13;
-Since the container needs to run as host if you need to change port edit the PORT variable and also the WebUI filed in Advanced View.</Overview>
+Since the container needs to run as host if you need to change port edit the PORT variable and also the WebUI filed in Advanced View.&#13;
+&#13;Obviously this is a joke, it'll use moderate but some resources for nothing so only use if you want to participate in the gag.</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:3000/</WebUI>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/hypermind.png</Icon>
