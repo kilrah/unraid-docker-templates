@@ -28,9 +28,14 @@ Obviously this is a joke, it'll use resources for nothing so only use if you wan
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Port" Target="PORT" Default="3000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable chat" Target="ENABLE_CHAT" Default="false" Mode="" Description="Enable Live Chat" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable Map" Target="ENABLE_MAP" Default="false" Mode="" Description="Enable displaying floating nodes" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Max connections" Target="MAX_CONNECTIONS" Default="25" Mode="" Description="Maximum number of direct connections" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Port" Target="PORT" Default="3000" Mode="" Description="The web dashboard port." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable chat" Target="ENABLE_CHAT" Default="false" Mode="" Description="Set to true to enable the P2P chat system." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable Map" Target="ENABLE_MAP" Default="false" Mode="" Description="Set to true to enable the map visualization." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable Themes" Target="ENABLE_THEMES" Default="true" Mode="" Description="Set to false to disable the theme switcher." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Visual limit" Target="VISUAL_LIMIT" Default="500" Mode="" Description="Max number of particles to render on the dashboard." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Max peers" Target="MAX_PEERS" Default="50000" Mode="" Description="Max peers to track in LRU cache." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Max connections" Target="MAX_CONNECTIONS" Default="15" Mode="" Description="Max active TCP/UTP connections." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Max relay hops" Target="MAX_RELAY_HOPS" Default="5" Mode="" Description="How far a global chat message travels (TTL)." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Peer timeout" Target="PEER_TIMEOUT" Default="45000" Mode="" Description="ms before a silent peer is considered offline." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <TailscaleStateDir/>
 </Container>
