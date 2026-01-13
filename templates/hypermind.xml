@@ -13,11 +13,11 @@
   <Overview>The High-Availability Solution to a Problem That Doesn't Exist.&#13;
 Hypermind is a completely decentralized, Peer-to-Peer deployment counter.&#13;
 &#13;
-It solves the critical infrastructure challenge of knowing exactly how many other people are currently wasting 50MB of RAM running this specific container.&#13;
+It solves the critical infrastructure challenge of knowing exactly how many other people are currently wasting RAM running this specific container, while providing a secure, serverless way to say "hello" to them.&#13;
 &#13;
 Since the container needs to run as host if you need to change port edit the PORT variable and also the WebUI filed in Advanced View.&#13;
 &#13;
-Obviously this is a joke, it'll use resources for nothing so only use if you want to participate in the gag. Container's now limited to 2G of RAM by default since it has a memory leak.</Overview>
+Obviously this is a joke, it'll use resources for nothing so only use if you want to participate in the gag. Container's now limited to 2G of RAM by default to avoid unfortunate situations.</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:3000/</WebUI>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/hypermind.png</Icon>
@@ -28,6 +28,9 @@ Obviously this is a joke, it'll use resources for nothing so only use if you wan
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PORT" Target="PORT" Default="3000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Port" Target="PORT" Default="3000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable chat" Target="ENABLE_CHAT" Default="false" Mode="" Description="Enable Live Chat" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable Map" Target="ENABLE_MAP" Default="false" Mode="" Description="Enable displaying floating nodes" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Max connections" Target="MAX_CONNECTIONS" Default="25" Mode="" Description="Maximum number of direct connections" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <TailscaleStateDir/>
 </Container>
