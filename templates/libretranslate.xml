@@ -12,13 +12,12 @@
   <Support>https://forums.unraid.net/topic/131353-support-kilrahlibretranslate/</Support>
   <Project>https://github.com/LibreTranslate/LibreTranslate</Project>
   <Overview>Free and Open Source Machine Translation API, entirely self-hosted.&#xD;&#xD;
-First start takes a while as models are being downloaded.&#xD;&#xD;
-Warning: This container is very big, expect about 12GB of Docker image usage.
+First start takes a while as models are being downloaded.
 </Overview>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/libretranslate.xml</TemplateURL>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/libretranslate.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>-u 99:100</ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled/>
@@ -26,4 +25,5 @@ Warning: This container is very big, expect about 12GB of Docker image usage.
   <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="5000" Default="5000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Model storage" Target="/home/libretranslate/.local" Default="/mnt/user/appdata/libretranslate" Mode="rw" Description="Where models are downloaded, about 10GB needed" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
