@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/197104-support-kilrahdji-logbook/</Support>
   <Project>https://github.com/arpanghosh8453/dji-logbook/</Project>
   <ReadMe/>
   <Overview>A high-performance application for analyzing DJI drone flight logs.</Overview>
