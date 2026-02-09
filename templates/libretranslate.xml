@@ -12,12 +12,13 @@
   <Support>https://forums.unraid.net/topic/131353-support-kilrahlibretranslate/</Support>
   <Project>https://github.com/LibreTranslate/LibreTranslate</Project>
   <Overview>Free and Open Source Machine Translation API, entirely self-hosted.&#xD;&#xD;
+You will need to create a "cache" and a "share" folder manually in the specified appdata folder manually before the container will run.&#xD;&#xD;
 First start takes a while as models are being downloaded.
 </Overview>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://github.com/kilrah/unraid-docker-templates/raw/main/templates/libretranslate.xml</TemplateURL>
   <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/libretranslate.png</Icon>
-  <ExtraParams>-u 99:100</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled/>
