@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>dji-logbook</Name>
-  <Repository>ghcr.io/arpanghosh8453/dji-logbook:latest</Repository>
+  <Name>drone-logbook</Name>
+  <Repository>ghcr.io/arpanghosh8453/drone-logbook:latest</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/197104-support-kilrahdji-logbook/</Support>
-  <Project>https://github.com/arpanghosh8453/dji-logbook/</Project>
+  <Project>https://github.com/arpanghosh8453/drone-logbook</Project>
   <ReadMe/>
   <Overview>A high-performance application for analyzing DJI drone flight logs.</Overview>
   <Category>Tools:</Category>
@@ -22,6 +22,6 @@
   <DonateLink/>
   <Requires/>
   <Config Name="Web UI" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="App Data" Target="/data/dji-logviewer" Default="/mnt/user/appdata/dji-logbook" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="App Data" Target="/data/drone-logbook" Default="/mnt/user/appdata/drone-logbook" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <TailscaleStateDir/>
 </Container>
