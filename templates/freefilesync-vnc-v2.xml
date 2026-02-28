@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>freefilesync-vnc-v2</Name>
+  <Repository>kilrah/freefilesync-vnc-v2</Repository>
+  <Registry>https://hub.docker.com/r/kilrah/freefilesync-vnc-v2</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/126600-support-freefilesync-vnc/</Support>
+  <Project>https://freefilesync.org/</Project>
+  <ReadMe/>
+  <Overview>FreeFileSync is a free and open-source program used for file synchronization.&#13;
+&#13;
+2 paths can be mapped (presented my default in the container as /path1 resp. /path2), be sure to only access things through those, writing somewhere else in the container filesystem would fill your Docker filesystem really quickly.&#13;
+The appdata folder is mapped at /home/freefilesync/ and will contain logs, config and can be used to store profiles.&#13;
+Do NOT map anything into /home/freefilesync anymore as that would cause the permissions to be changed on your data.&#13;
+&#13;
+Notes: If the window does not seem to respond to mouse input it is because FreeFileSync's donation popup was spawned behind the main window. Drag the window a bit to reveal it.&#13;
+Right-clicking in the blank space allows opening other instances.
+</Overview>
+  <Category>Backup: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:8080]/vnc.html?path=vnc&amp;amp;autoconnect=true&amp;amp;resize=remote&amp;amp;reconnect=true&amp;amp;show_dot=true&amp;amp;bell=false&amp;amp;view_only=false</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/kilrah/unraid-docker-templates/master/templates/freefilesync-vnc-v2.xml</TemplateURL>
+  <Icon>https://github.com/kilrah/unraid-docker-templates/raw/main/icons/FreeFileSync.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>Donate to FreeFileSync author</DonateText>
+  <DonateLink>https://freefilesync.org/download.php</DonateLink>
+  <Requires/>
+  <Changes>
+###v2.0.0 (2026-01-28)
+- Update environment
+- FreeFileSync 14.8
+- Added support for running as root
+- Added taskbar
+- New repo because the paths have changed, do not reuse the old template with this image!
+
+###v1.0.31 (2026-01-25)
+- Update freefilesync to version 14.7
+
+###v1.0.3 (2022-07-31)
+- Add firefox browser to handle Google Drive authentication. Available in menu as well
+
+###v1.0.2 (2022-07-31)
+- Add missing Asian fonts
+
+###v1.0.1 (2022-07-30)
+- Remove unnecessary options from connection page
+
+###v1.0.0 (2022-07-29)
+- Initial release
+  </Changes>
+  <Config Name="VNC interface" Target="8080" Default="8080" Mode="tcp" Description="VNC interface port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Path 1" Target="/path1" Default="" Mode="ro" Description="Path to expose to FreeFileSync" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Path 2" Target="/path2" Default="" Mode="rw" Description="Optional second path to expose" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Appdata" Target="/home/freefilesync/" Default="/mnt/user/appdata/freefilesync" Mode="rw" Description="Application data" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Run as root" Target="RUN_AS_ROOT" Default="false" Mode="" Description="Do not drop container privileges to allow handling things like appdata that are not accessible by user nobody. Use with caution." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <TailscaleStateDir/>
+</Container>

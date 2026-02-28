@@ -9,10 +9,11 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
+  <Deprecated>true</Deprecated>
   <Support>https://forums.unraid.net/topic/126600-support-freefilesync-vnc/</Support>
   <Project>https://freefilesync.org/</Project>
   <Overview>FreeFileSync is a free and open-source program used for file synchronization. It is available on Windows, Linux and macOS. The project is backed by donations.&#xD;&#xD;
-This template based on https://github.com/helfrichmichael/prusaslicer-novnc gives a FreeFileSync instance through a VNC connection. 2 paths can be mapped (presented in the container as /home/freefilesync/path1 resp. path2), be sure to only access things through those, writing somewhere else in the container filesystem would fill your Docker image really quickly.&#xD;
+This template gives a FreeFileSync instance through a VNC connection. 2 paths can be mapped (presented in the container as /home/freefilesync/path1 resp. path2), be sure to only access things through those, writing somewhere else in the container filesystem would fill your Docker image really quickly.&#xD;
 The appdata folder is mapped at /home/freefilesync/appdata and will contain logs, config and can be used to store profiles.&#xD;&#xD;
 Notes: If the window does not seem to respond to mouse input it is because FreeFileSync's donation popup was spawned behind the main window. Drag the window a bit to reveal it.&#xD;&#xD;
 If you minimized the FreeFileSync window a middle-click will bring up a window switcher.&#xD;
@@ -24,8 +25,8 @@ Right-clicking in the blank space allows opening other instances.</Overview>
   <PostArgs/>
   <CPUset/>
   <Changes>
-###v1.0.26 (2025-02-28)
-- Update freefilesync to version 14.2
+###v1.0.31 (2026-01-25)
+- Update freefilesync to version 14.7
 
 ###v1.0.3 (2022-07-31)
 - Add firefox browser to handle Google Drive authentication. Available in menu as well
