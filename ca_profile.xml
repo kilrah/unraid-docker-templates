@@ -1,0 +1,14 @@
+<CommunityApplications>
+  <!-- Required profile -->
+  <Profile>
+    Templates for cool stuff I find, and a few containers I maintain. Each app has its own support thread.
+  </Profile>
+  <!-- Optional icon -->
+  <Icon>https://avatars.githubusercontent.com/u/6065069</Icon>
+  <!-- Optional web page -->
+  <WebPage>https://github.com/kilrah</WebPage>
+  <!-- Optional donation link -->
+  <DonateLink>https://ko-fi.com/kilrah</DonateLink>
+  <!-- Optional donation text -->
+  <DonateText>If you like my templates, a lil support is appreciated!</DonateText>
+</CommunityApplications>
